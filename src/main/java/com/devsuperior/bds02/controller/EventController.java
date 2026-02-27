@@ -1,7 +1,7 @@
 package com.devsuperior.bds02.controller;
 
 import com.devsuperior.bds02.dto.EventDTO;
-import com.devsuperior.bds02.service.EventyService;
+import com.devsuperior.bds02.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class EventController {
 
     @Autowired
-    private EventyService service;
+    private EventService service;
 
     //UPDATE
     @PutMapping(value = "/{id}")
